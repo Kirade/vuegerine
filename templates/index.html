@@ -1,0 +1,17 @@
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vuejs</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+{# Production build시에 사용한다 #}
+{#  {% render_bundle 'manifest' 'js' %}#}
+{#  {% render_bundle 'vendor' 'js' %}#}
+  {% render_bundle 'app' %}
+</html>

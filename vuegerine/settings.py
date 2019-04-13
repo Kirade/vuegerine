@@ -55,7 +55,7 @@ ROOT_URLCONF = 'vuegerine.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'vuejs/dist')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,10 +125,11 @@ STATICFILES_DIRS = [
 ]
 
 # Django webpack loader 설정
-#
-# WEBPACK_LOADER = {
-#     'DEFAULT': {
-#         'BUNDLE_DIR_NAME': 'static/',
-#         'STATS_FILE': os.path.join(BASE_DIR, 'vuejs/webpack-stats.json'),
-#     },
-# }
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'CACHE': not DEBUG,
+        'BUNDLE_DIR_NAME': 'static/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'vuejs/webpack-stats.json'),
+    },
+}
