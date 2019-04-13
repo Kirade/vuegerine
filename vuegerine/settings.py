@@ -121,5 +121,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-  os.path.join(BASE_DIR, 'vuejs/dist'),
+    os.path.join(BASE_DIR, 'vuejs/dist/static'),
 ]
+
+# Django webpack loader 설정
+
+WEBPACK_LOADER = {
+    'DEFAULT': {
+        'BUNDLE_DIR_NAME': 'static/',
+        'STATS_FILE': os.path.join(BASE_DIR, 'vuejs/webpack-stats.json'),
+    },
+}
