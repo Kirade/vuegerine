@@ -1,14 +1,21 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import App from '@/App'
 import HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
+      name: 'App',
+      component: App
+    },
+    {
+      path: '/hello',
+      name: 'hello',
       component: HelloWorld
     }
   ]
