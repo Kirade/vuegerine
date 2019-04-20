@@ -2,11 +2,10 @@
   <div class="navigation-bar">
     <!--   TODO: navigation 에서 부모인 base로 이벤트 전달 필요   -->
     <li v-for="page in pages" :key="page.name">
-      {{ page }}
+      <p class="page-element">
+        <router-link :to="{ name: page.name }">To {{ page.name }}</router-link>
+      </p>
     </li>
-    Naviagtion Bar
-    <router-link :to="{ name: 'hello' }">To Hello</router-link>
-    <router-link :to="{ name: 'Test.vue' }">To Test</router-link>
   </div>
 </template>
 
@@ -21,6 +20,15 @@ export default {
     Landing,
     Hello,
     Test
+  },
+  data () {
+    return {
+      pages: [
+        Landing,
+        Hello,
+        Test
+      ]
+    }
   }
 }
 </script>
@@ -31,5 +39,14 @@ export default {
   width: 100%;
   height: 30px;
   text-align: center;
+}
+
+.navigation-bar li {
+  display: inline;
+  padding: 0 20px
+}
+
+.page-element {
+  display: inline;
 }
 </style>
