@@ -28,6 +28,6 @@ vue_urlpatterns = [
 ]
 
 urlpatterns = []
-urlpatterns += admin_urlpatterns
+urlpatterns += vue_urlpatterns
 urlpatterns += admin_urlpatterns
 
