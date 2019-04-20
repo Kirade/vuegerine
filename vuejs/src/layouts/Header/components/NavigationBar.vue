@@ -1,9 +1,10 @@
 <template>
   <div class="navigation-bar">
     This is NavBar
-    <router-link to="/hello">Hello</router-link>
-    <router-link to="/landing">Landing</router-link>
-    <router-link to="/test">Test</router-link>
+    <router-link to="/landing">Home</router-link>
+    <router-link to="/about">About</router-link>
+    <router-link to="/store">Store</router-link>
+    <router-link to="/contact">contact</router-link>
   </div>
 </template>
 

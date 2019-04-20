@@ -1,18 +1,17 @@
 <template>
-  <div class="outermost">
-    This is Landing Page
+  <div class="contact-main">
+    This is Contact Page
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Landing'
+  name: 'contact'
 }
 </script>
 
 <style scoped>
-.outermost {
+.contact-main {
   font-size: 3rem;
-  display: block;
 }
 </style>

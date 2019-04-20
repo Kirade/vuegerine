@@ -3,8 +3,9 @@ import Router from 'vue-router'
 
 import Layout from '@/layouts/Layout'
 import Landing from '@/pages/Landing/Landing'
-import HelloWorld from '@/components/HelloWorld'
-import Test from '@/components/Test'
+import About from '@/pages/About/About'
+import Store from '@/pages/Store/Store'
+import Contact from '@/pages/Contact/Contact'
 
 Vue.use(Router)
 
@@ -21,12 +22,16 @@ export default new Router({
           component: Landing
         },
         {
-          path: 'hello',
-          component: HelloWorld
+          path: 'about',
+          component: About
         },
         {
-          path: 'test',
-          component: Test
+          path: 'store',
+          component: Store
+        },
+        {
+          path: 'contact',
+          component: Contact
         }
       ]
     }
