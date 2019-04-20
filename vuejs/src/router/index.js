@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Base from '@/Base'
 import HelloWorld from '@/components/HelloWorld'
+import Layout from '@/layouts/Layout'
 import Test from '@/components/Test'
 import Landing from '@/pages/Landing/Landing'
 
@@ -12,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Base',
-      component: Base,
+      name: 'Layout',
+      component: Layout,
       children: [
         {
           path: 'landing',

@@ -1,5 +1,6 @@
 <template>
   <div class="navigation-bar">
+    This is NavBar
     <!--   TODO: navigation 에서 부모인 base로 이벤트 전달 필요   -->
     <li v-for="page in pages" :key="page.name">
       <p class="page-element">
@@ -36,14 +37,13 @@ export default {
 <style scoped>
 .navigation-bar {
   border: 2px solid;
-  width: 100%;
   height: 30px;
   text-align: center;
 }
 
 .navigation-bar li {
   display: inline;
-  padding: 0 20px
+  padding: 0 5px;
 }
 
 .page-element {
