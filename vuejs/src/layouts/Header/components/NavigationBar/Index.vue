@@ -14,7 +14,6 @@
 import NavigationBarItem from './NavigationBarItem'
 
 export default {
-  name: 'NavigationBar',
   components: {
     NavigationBarItem
   },

@@ -11,7 +11,6 @@ import LayoutHeader from './Header/Header'
 import LayoutFooter from './Footer/Footer'
 
 export default {
-  name: 'Layout',
   components: {
     LayoutHeader,
     LayoutFooter

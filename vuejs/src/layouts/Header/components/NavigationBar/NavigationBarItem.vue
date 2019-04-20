@@ -1,7 +1,7 @@
 <template>
-  <div class="bar-item-container">
+  <div>
     <nav-link :to="item.to">
-      <nav-item :name="item.name">{{ item.name }}</nav-item>
+      <nav-item :name="item.name"></nav-item>
     </nav-link>
   </div>
 </template>
@@ -11,7 +11,6 @@ import NavItem from './Item'
 import NavLink from './Link'
 
 export default {
-  name: 'NavigationBarItem',
   components: {
     NavItem,
     NavLink
