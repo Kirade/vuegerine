@@ -24,9 +24,9 @@ admin_urlpatterns = [
 
 vue_urlpatterns = [
     path('', VueIndex.as_view()),
-    path('hello', VueIndex.as_view()),
-    path('landing', VueIndex.as_view()),
-    path('test', VueIndex.as_view()),
+    path('about', VueIndex.as_view()),
+    path('store', VueIndex.as_view()),
+    path('contact', VueIndex.as_view()),
 ]
 
 urlpatterns = []

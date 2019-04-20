@@ -1,19 +1,20 @@
 <template>
   <div class="layout-main">
-    <Header></Header>
+    <layout-header></layout-header>
     <router-view></router-view>
-    <Footer></Footer>
+    <layout-footer></layout-footer>
   </div>
 </template>
 
 <script>
-import Header from './Header/Header'
-import Footer from './Footer/Footer'
+import LayoutHeader from './Header/Header'
+import LayoutFooter from './Footer/Footer'
+
 export default {
   name: 'Layout',
   components: {
-    Header,
-    Footer
+    LayoutHeader,
+    LayoutFooter
   }
 }
 </script>

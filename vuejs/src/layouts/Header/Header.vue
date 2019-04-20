@@ -1,7 +1,7 @@
 <template>
   <div class="header-main">
     Header Section
-    <NavigationBar></NavigationBar>
+    <navigation-bar></navigation-bar>
   </div>
 </template>
 

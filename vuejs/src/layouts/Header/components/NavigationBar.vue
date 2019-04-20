@@ -1,7 +1,7 @@
 <template>
   <div class="navigation-bar">
     This is NavBar
-    <router-link to="/landing">Home</router-link>
+    <router-link to="/home">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-link to="/store">Store</router-link>
     <router-link to="/contact">contact</router-link>

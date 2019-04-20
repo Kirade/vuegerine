@@ -15,10 +15,11 @@ export default new Router({
     {
       path: '/',
       name: 'Layout',
+      redirect: 'home',
       component: Layout,
       children: [
         {
-          path: 'landing',
+          path: 'home',
           component: Landing
         },
         {
