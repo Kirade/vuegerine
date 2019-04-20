@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-bar-item-main">
+  <div class="bar-item-container">
     <nav-link :to="item.to">
       <nav-item :name="item.name">{{ item.name }}</nav-item>
     </nav-link>

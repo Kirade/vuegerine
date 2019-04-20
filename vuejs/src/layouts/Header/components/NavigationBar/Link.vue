@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-bar-link-main">
+  <div class="link-container">
     <router-link :to="to">
       <slot />
     </router-link>
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style scoped>
-.navigation-bar-link-main {
+.link-container {
   display: inline;
 }
 

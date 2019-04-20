@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation-bar-item-main">
+  <div class="item-container">
     <p class="item-name">{{ name }}</p>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style scoped>
-.navigation-bar-item-main {
+.item-container {
   display: inline;
 }
 .item-name {

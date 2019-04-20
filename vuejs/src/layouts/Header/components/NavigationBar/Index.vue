@@ -1,11 +1,11 @@
 <template>
-  <div class="navigation-bar">
+  <div class="navigation-bar-container">
     This is NavBar
     <navigation-bar-item
       v-for="item in items"
       :key="item.name"
       :item="item"
-      class="navbar-item-container"
+      class="navigation-bar-item"
     ></navigation-bar-item>
   </div>
 </template>
@@ -44,12 +44,12 @@ export default {
 </script>
 
 <style scoped>
-.navigation-bar {
+.navigation-bar-container {
   border: 2px solid;
   height: 30px;
   text-align: center;
 }
-.navbar-item-container {
+.navigation-bar-item {
   display: inline;
 }
 </style>
