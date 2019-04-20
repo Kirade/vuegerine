@@ -18,8 +18,16 @@ from django.urls import path
 
 from vuegerine.views import VueIndex
 
-urlpatterns = [
+admin_urlpatterns = [
     path('admin/', admin.site.urls),
+]
+
+vue_urlpatterns = [
     path('', VueIndex.as_view()),
     path('hello', VueIndex.as_view()),
 ]
+
+urlpatterns = []
+urlpatterns += admin_urlpatterns
+urlpatterns += admin_urlpatterns
+
