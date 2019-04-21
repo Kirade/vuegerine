@@ -27,5 +27,6 @@ export default {
 <style scoped>
 .navigation-bar-item-container {
   float: left;
+  margin-right: 20px;
 }
 </style>

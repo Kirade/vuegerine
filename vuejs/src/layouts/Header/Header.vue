@@ -1,6 +1,5 @@
 <template>
   <div class="header-main">
-    Header Section
     <navigation-bar></navigation-bar>
   </div>
 </template>
@@ -17,7 +16,6 @@ export default {
 
 <style scoped>
 .header-main {
-  height: 60px;
   border: 2px solid;
 }
 </style>

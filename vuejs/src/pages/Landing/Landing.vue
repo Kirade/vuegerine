@@ -14,6 +14,6 @@ export default {
 .landing-container {
   font-size: 3rem;
   display: block;
-  padding-top: 300px;
+  padding: 300px 0 300px;
 }
 </style>

@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
 .footer-main {
-  height: 60px;
+  height: 30px;
   border: 2px solid;
 }
 </style>
