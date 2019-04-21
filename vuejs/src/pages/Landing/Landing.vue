@@ -1,5 +1,5 @@
 <template>
-  <div class="outermost">
+  <div class="landing-container">
     This is Landing Page
   </div>
 </template>
@@ -11,8 +11,9 @@ export default {
 </script>
 
 <style scoped>
-.outermost {
+.landing-container {
   font-size: 3rem;
   display: block;
+  padding-top: 300px;
 }
 </style>

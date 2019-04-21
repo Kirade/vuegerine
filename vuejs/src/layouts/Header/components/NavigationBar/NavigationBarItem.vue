@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="navigation-bar-item-container">
     <nav-link :to="item.to">
       <nav-item :name="item.name"></nav-item>
     </nav-link>
@@ -21,10 +21,11 @@ export default {
       required: true
     }
   }
-
 }
 </script>
 
 <style scoped>
-
+.navigation-bar-item-container {
+  float: left;
+}
 </style>
