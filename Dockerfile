@@ -3,7 +3,7 @@ FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY vuejs/package*.json ./
 RUN npm install
-COPY ./vuejs ./
+COPY ./vuejs/ ./
 RUN npm run build
 
 # production stage
