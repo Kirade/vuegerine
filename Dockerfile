@@ -1,7 +1,7 @@
 # build stage
 FROM node:lts-alpine as build-stage
 WORKDIR /app
-COPY vuejs/package*.json ./
+COPY vuejs/package*.json ./vuejs
 RUN cd vuejs && npm install
 COPY . .
 RUN cd vuejs && npm run build
