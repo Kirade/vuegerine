@@ -7,7 +7,7 @@
 click==7.0
 django-extensions==2.1.6
 django-webpack-loader==0.6.0
-django==2.2
+django==2.2.13
 isort==4.3.17
 pip-tools==3.6.0
 pytz==2019.1
